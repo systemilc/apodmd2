@@ -1,0 +1,103 @@
+
+body {
+    background-color: #E50113;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .lbl {
+    color: #E8E4E2;
+    text-align: center;
+    font-family: "Verdana";
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  form div{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  #pk-name{
+    -webkit-box-shadow: 7px 8px 19px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 8px 19px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 8px 19px -5px rgba(0,0,0,0.75);
+    width: 300px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 15px;
+    outline: 0;
+    
+  }
+
+  #pesquisar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    transition: 0.3s ease;
+    margin-left: 5px;
+    font-size: 25px;
+   /* background-image: url(./poke.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+     
+    animation: loading 1s infinite;
+
+  }
+
+  @keyframes loading{
+    from{
+    transform: rotate(0deg)
+  }to{
+    transform: rotate(360deg)
+  }
+}
+
+.resultado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagem{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.poke-info{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+  img{
+    
+    width: auto;
+    height: 400px;
+  }
+  
+  h2{
+    font-size: 30px;
+  }
+  
+  
+  
+  
