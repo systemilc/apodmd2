@@ -12,6 +12,7 @@ $('#pesquisar').click(function(event){
     if(data >='1995-06-16'){
         const url = "https://api.nasa.gov/planetary/apod?api_key="
         const api = "nY1cr97W2x0xU9oZsjtJI6UJPi18QW4kFwPRA3b8&date="
+        
         $.ajax({url: `${url}${api}${data}`,
              success: function (resultado){
                
@@ -28,11 +29,7 @@ $('#pesquisar').click(function(event){
                 $('#midia').html(` <iframe id="video" src="${resultado.url}" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
                 
               }
-                
-    
-            
-               
-    
+ 
                 $('#texto').html(`ID: ${resultado.explanation}`)
               
                
